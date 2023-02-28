@@ -1,38 +1,35 @@
 {
-  "name": "@semantic-release/apm-config",
-  "description": "semantic-release shareable config to publish Atom packages with apm",
+  "name": "semantic-release-pulsar-config",
+  "description": "semantic-release shareable config to publish Pulsar packages",
   "version": "0.0.0-development",
-  "author": "Pierre Vanduynslager (https://github.com/pvdlg)",
+  "author": "Ewan Harris",
   "bugs": {
-    "url": "https://github.com/semantic-release/apm-config/issues"
+    "url": "https://github.com/ewanharris/semantic-release-pulsar-config/issues"
   },
-  "contributors": [
-    "Stephan Bönnemann <stephan@boennemann.me> (http://boennemann.me)",
-    "Gregor Martynus (https://twitter.com/gr2m)"
-  ],
   "dependencies": {
-    "@semantic-release/apm": "^4.0.0",
-    "@semantic-release/changelog": "^6.0.0",
+    "semantic-release-pulsar": "^1.0.0",
+    "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/commit-analyzer": "^9.0.0",
     "@semantic-release/git": "^10.0.0",
-    "@semantic-release/github": "^8.0.0",
+    "@semantic-release/github": "^8.0.7",
     "@semantic-release/release-notes-generator": "^10.0.0"
   },
   "devDependencies": {
-    "semantic-release": "19.0.5",
-    "xo": "0.50.0"
+    "semantic-release": "20.1.1",
+    "xo": "0.53.1"
   },
   "engines": {
-    "node": ">=14.17"
+    "node": ">=18"
   },
   "files": [
     "index.js"
   ],
-  "homepage": "https://github.com/semantic-release/apm-config#readme",
+  "homepage": "https://github.com/ewanharris/semantic-release-pulsar-config#readme",
   "keywords": [
-    "apm",
-    "atom",
-    "atom-packages",
+    "ppm",
+    "pulsar",
+    "pulsar-packages",
+    "pulsar-edit",
     "conventional-changelog",
     "release",
     "semantic-release",
@@ -53,7 +50,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/semantic-release/apm-config.git"
+    "url": "https://github.com/ewanharris/semantic-release-pulsar-config.git"
   },
   "scripts": {
     "semantic-release": "semantic-release",
@@ -68,9 +65,9 @@
       "unicorn/prefer-module": "off"
     }
   },
-  "renovate": {
-    "extends": [
-      "github>semantic-release/.github"
+  "release": {
+    "branches": [
+     "main"
     ]
   }
 }

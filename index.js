@@ -4,7 +4,7 @@ module.exports = {
     '@semantic-release/release-notes-generator',
     '@semantic-release/github',
     '@semantic-release/changelog',
-    '@semantic-release/apm',
+    'semantic-release-pulsar',
     ['@semantic-release/git', {message: `chore(release): \${nextRelease.version} [skip ci]`}],
   ],
 };
